@@ -1,0 +1,564 @@
+@font-face {
+    font-family: "Nunito";   /*1 ta oilaga tegishli 2 xil shrift chaqirildi*/
+    src: url('../fonts/Nunito-Regular.woff2') format('woff2'),
+    url('../fonts/Nunito-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Nunito-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style:italic;
+}
+html{
+    box-sizing: border-box;
+    background-color: #f4fcff;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{font-family: "Nunito","Arial","sans-serif"}
+
+.sitenav{
+    margin-top: 36px;
+
+}
+.sitenav__container{
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.sitenav_telegram{
+    margin-left: 480px;
+    color: #2f4b6e;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "Nunito",serif;
+    display: flex;
+    align-items: center;
+}
+.buttion{
+
+}
+.button--yellow{
+    text-decoration: none;
+    background-color: #f8e587;
+    border-radius: 31px;
+    border: 0;
+    color: #2f4b6e;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: "Nunito","serif";
+    padding: 15px 50px;
+
+    margin-right: 15px;
+}
+.button--yellow:hover{
+    text-decoration: none;
+    background-color: #f8eb49;
+    border-radius: 31px;
+    border: 0;
+    color: #2f4b6e;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: "Nunito","serif";
+    padding: 15px 50px;
+
+    margin-right: 15px;
+}
+
+.button__icon{
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    animation-name:apple;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+.hero{
+    margin-top: 226px;
+
+}
+.hero__container{
+    display: flex;
+    justify-content: space-around;
+    /*flex-wrap: nowrap;*/
+}
+.hero__content{
+    width: 760px;
+}
+.hero__big-text{
+    width: 388px;
+    height: 85px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    /*font-style: normal;*/
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 52px;
+    margin: 0 28px 38px 0;
+}
+.hero__text{
+    width: 417px;
+    height: 130px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size:24px;
+    font-weight: 600;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+.hero__small-text{
+    color: #738091;
+    font-family: "Nunito","serif";
+    font-size: 15px;
+    font-weight: 400;
+}
+.handshake{
+    margin-top: 36px;
+}
+.handshake__container{
+    margin: 150px auto;
+    display: flex;
+    align-items: center;
+}
+.handshake__text{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-right: 400px;
+}
+.handshake_img{
+    width: 49px;
+    height: 53px;
+    display: flex;
+    align-self: center;
+    animation-name: bye-bye;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+.handshake__text p{
+    width: 353px;
+    height: 50px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-left: 31px;
+}
+.button--telegram{
+    margin-right: 50px;
+    white-space: nowrap;
+    border-radius: 31px;
+    border: 2px solid #d0dceb;
+    background-color: #f4fcff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 23px 51px 21px 40px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 16px;
+    font-weight: 400;
+}
+.button--telegram:hover{
+    margin-right: 50px;  /*ko'rish kerak */
+    white-space: nowrap;
+
+    border-radius: 31px;
+    border: 2px solid #d0dceb;
+    background-color: #a3a3a3;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 23px 51px 21px 40px;
+    color: #f3fbfe;
+    font-family: "Nunito","serif";
+    font-size: 16px;
+    font-weight: 400;
+}
+.features{
+    width: 1600px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    border-radius: 0 0 293px;
+    background-position: center ;
+    background-image: linear-gradient(to bottom, #f4fcff 0%, #e8f5fa 100%);
+    background-size: 120%;
+    margin-bottom: 152px;
+}
+.features__content{
+    margin: 0 auto;
+}
+.features__lead{
+    width: 502px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    margin: 0 auto;
+}
+.features__text{
+    width: 577px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: center;
+    /*margin-bottom: 128px;*/
+    margin: 50px auto;
+    /*margin: 23px 100px 103px 100px;*/
+}
+.features_list{
+    list-style-type: none;
+    width: 780px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.features__item{
+    width: 180px;
+    text-align: center;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+.screenshots{
+}
+.screenshot{
+    /*width: 100%;*/
+    width: 1200px;
+    display: flex;
+    flex-direction:row ;
+    position: relative;
+}
+.screenshot__img:first-child{
+}
+.screenshot__content{
+    margin-top: 100px;
+    margin-left: 50px;
+    display: block;
+    width: 398px;
+    height: 253px;
+}
+.screenshot__lead{
+    width: 424px;
+    height: 93px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+
+}
+.screenshot__text{
+    width: 398px;
+    height: 130px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+}
+.screenshot__black_phone{
+    position: absolute;
+    top: -120px;
+    right: 140px;
+}
+.screenshots:nth-child(3){
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+.screenshots_three{
+    margin-top: 300px;
+}
+.stories{
+    width: 1600px;
+    height: 549px;
+    margin: 10px auto;
+    position: relative;
+    background-repeat: no-repeat;
+    border-top-left-radius: 293px;
+    background-position: center ;
+    background-image: linear-gradient(to bottom, #f8dd7e 10%, #f8eb67 100%);
+    background-size: 120%;
+}
+.stories__heading{
+    display: inline-flex;
+    color: #2f4b6e;
+    margin-left: 430px;
+    width: 397px;
+    font-family: "Nunito","serif";
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 52px;
+    align-content: center;
+}
+.stories_text{
+    position: absolute;
+    top:105px;
+    left: 520px;
+    color: #2f4b6e;
+    margin: 25px auto;
+    text-align: center;
+    width: 508px;
+    font-family: "Nunito","serif";
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.button--outline{
+    margin-left: 110px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 31px;
+    border: 1px solid #2f4b6e;
+    background-color: #f8e587;
+    background-image: url("../img/chat-round@2x.png");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 23px 47px 21px 74px;
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+.button--outline:hover{
+    margin-left: 110px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 31px;
+    box-shadow: 0 0 10px 10px silver;
+    background-color: #f8dd7e;
+    background-image: url("../img/chat-round@2x.png");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 23px 47px 21px 74px;
+    position: absolute;
+    left: 500px;
+    top: 250px;
+}
+.Oval_Copy_4{
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+.Oval{
+    position: absolute;
+    left: 170px;
+    top: 100px;
+}
+.oval_copy_2{
+    position: absolute;
+    left: 350px;
+    top: 200px;
+}
+.oval_copy_3{
+    position: absolute;
+    left: 120px;
+    bottom: 100px;
+}
+.Oval_Copy{
+    position: absolute;
+    left: 300px;
+    bottom: -60px;
+}
+.Oval_Copy_5{
+    position: absolute;
+    left: 30px;
+    bottom: -90px;
+}
+.Oval_Copy_12{
+    position: absolute;
+    right: 35px;
+    top:-70px;
+}
+.Oval_copy_11{
+    position: absolute;
+    right: 235px;
+    top:100px;
+}
+.Oval_Copy_6{
+    position: absolute;
+    right: 5px;
+    top:230px;
+}
+.oval_copy_7{
+    position: absolute;
+    right: 105px;
+    bottom:10px;
+}
+.oval_copy_9{
+    position: absolute;
+    right: 135px;
+    bottom:160px;
+}
+.Oval_Copy-10{
+    position: absolute;
+    right: 315px;
+    bottom:-105px;
+}
+.Oval_Copy_8{
+    position: absolute;
+    right: -55px;
+    bottom:-170px;
+}
+.get-app{
+    margin: 149px auto;
+    display: block;
+
+
+}
+.get-app_lead{
+    width: 397px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 52px;
+    margin: 0 auto;
+
+}
+.get-app__text{
+    width: 395px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin: 25px auto;
+
+}
+.get-app .button--yellow{
+    margin-left: 470px;
+}
+.group_reader{
+    background-image: url("../img/Group_908.png");
+    background-repeat: no-repeat;
+    background-position: center 75px;
+    width: 1600px;
+    height: 391px;
+    margin: 0 auto;
+    /*padding: 0;*/
+}
+.site-footer{
+    width: 1600px;
+    height: 231px;
+    border-radius: 0;
+    background-color: #e6f8ff;
+    margin: 0 auto;
+    padding-top: 69px;
+    /*padding: 0;*/
+    position: relative;
+
+}
+.socials{
+    list-style-type: none;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.socials__item{
+    width: 42px;
+    height: 42px;
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+}
+.socials__item:hover{
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 0 0 2px #a3a3a3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+}
+.socials__link{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+.site-footer__text{
+    width: 650px;
+    color: #2f4b6e;
+    font-family: "Nunito","serif";
+    font-size: 14px;
+    font-weight: 400;
+    margin: 30px auto;
+    text-align: center;
+    white-space: nowrap;
+}
+/*animations*/
+@keyframes apple {
+    from{
+        transform: rotateY(0grad);
+
+    }
+    to{
+        transform: rotateY(360grad);
+    }
+}
+@keyframes bye-bye {
+    from{
+        transform: rotate(5deg);
+        transform-origin: center top;
+    }
+    to{
+        transform: rotate(85deg);
+
+    }
+}
+
